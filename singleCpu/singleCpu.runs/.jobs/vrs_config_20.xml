@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="cpu_pc_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_pc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_ctrlUnit_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_ctrlUnit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_regFile_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_regFile_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_alu_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_alu_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_pick41_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_pick41_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_IR_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_IR_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_delay_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_delay_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_delay_0_1_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_delay_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_delay_1_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_delay_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_delay_2_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_delay_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="cpu_pc_0_0_synth_1"/>
+		<Parent Id="cpu_ctrlUnit_0_0_synth_1"/>
+		<Parent Id="cpu_regFile_0_0_synth_1"/>
+		<Parent Id="cpu_alu_0_0_synth_1"/>
+		<Parent Id="cpu_pick41_0_0_synth_1"/>
+		<Parent Id="cpu_IR_0_0_synth_1"/>
+		<Parent Id="cpu_delay_0_0_synth_1"/>
+		<Parent Id="cpu_delay_0_1_synth_1"/>
+		<Parent Id="cpu_delay_1_0_synth_1"/>
+		<Parent Id="cpu_delay_2_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="cpu_pc_0_0_synth_1"/>
+		<Parent Id="cpu_ctrlUnit_0_0_synth_1"/>
+		<Parent Id="cpu_regFile_0_0_synth_1"/>
+		<Parent Id="cpu_alu_0_0_synth_1"/>
+		<Parent Id="cpu_pick41_0_0_synth_1"/>
+		<Parent Id="cpu_IR_0_0_synth_1"/>
+		<Parent Id="cpu_delay_0_0_synth_1"/>
+		<Parent Id="cpu_delay_0_1_synth_1"/>
+		<Parent Id="cpu_delay_1_0_synth_1"/>
+		<Parent Id="cpu_delay_2_0_synth_1"/>
+	</Run>
+</Runs>
+

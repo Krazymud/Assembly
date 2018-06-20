@@ -1,0 +1,96 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
+#  -string -flagsOSRD
+preplace port CLK_0 -pg 1 -y 560 -defaultsOSRD
+preplace port clk_100m_0 -pg 1 -y 350 -defaultsOSRD
+preplace port sw14_0 -pg 1 -lvl 3:-130 -defaultsOSRD -bot
+preplace port RST_0 -pg 1 -y 800 -defaultsOSRD
+preplace port Reset_0 -pg 1 -y 600 -defaultsOSRD
+preplace port sw15_0 -pg 1 -y 110 -defaultsOSRD
+preplace portBus timer_0 -pg 1 -y 350 -defaultsOSRD
+preplace portBus dispcode_0 -pg 1 -y 280 -defaultsOSRD
+preplace inst pc_0 -pg 1 -lvl 1 -y 590 -defaultsOSRD
+preplace inst regFile_0 -pg 1 -lvl 3 -y 1150 -defaultsOSRD
+preplace inst alu_0 -pg 1 -lvl 4 -y 1030 -defaultsOSRD
+preplace inst pick41_0 -pg 1 -lvl 5 -y 530 -defaultsOSRD
+preplace inst transtate_0 -pg 1 -lvl 2 -y 230 -defaultsOSRD
+preplace inst pick21_32_0 -pg 1 -lvl 4 -y 1210 -defaultsOSRD
+preplace inst add_0 -pg 1 -lvl 2 -y 480 -defaultsOSRD
+preplace inst insMem_0 -pg 1 -lvl 2 -y 610 -defaultsOSRD
+preplace inst pick21_32_1 -pg 1 -lvl 5 -y 760 -defaultsOSRD
+preplace inst four_0 -pg 1 -lvl 1 -y 460 -defaultsOSRD
+preplace inst ctrlUnit_0 -pg 1 -lvl 3 -y 820 -defaultsOSRD
+preplace inst IR_0 -pg 1 -lvl 2 -y 1110 -defaultsOSRD
+preplace inst szExtend_0 -pg 1 -lvl 1 -y 1300 -defaultsOSRD
+preplace inst led_0 -pg 1 -lvl 5 -y 280 -defaultsOSRD
+preplace inst lShift2_0 -pg 1 -lvl 3 -y 560 -defaultsOSRD
+preplace inst show_0 -pg 1 -lvl 3 -y 200 -defaultsOSRD
+preplace inst clock_0 -pg 1 -lvl 2 -y 350 -defaultsOSRD
+preplace inst addBranch_0 -pg 1 -lvl 3 -y 420 -defaultsOSRD
+preplace inst dataMem_0 -pg 1 -lvl 5 -y 920 -defaultsOSRD
+preplace inst jExtend_0 -pg 1 -lvl 1 -y 1180 -defaultsOSRD
+preplace inst clk_divide_0 -pg 1 -lvl 1 -y 350 -defaultsOSRD
+preplace inst pick_data_0 -pg 1 -lvl 4 -y 280 -defaultsOSRD
+preplace inst pick21_32_5_0 -pg 1 -lvl 4 -y 840 -defaultsOSRD
+preplace inst lshift2_26_0 -pg 1 -lvl 1 -y 1040 -defaultsOSRD
+preplace netloc IR_0_ALUOpcode 1 2 1 740
+preplace netloc ctrlUnit_0_PCWre 1 0 4 20 30 NJ 30 NJ 30 1260
+preplace netloc ctrlUnit_0_ExtSel 1 0 4 20 1410 NJ 1410 NJ 1410 1220
+preplace netloc clock_0_timer 1 2 4 NJ 350 1290J 350 NJ 350 NJ
+preplace netloc IR_0_rd 1 2 1 750
+preplace netloc insMem_0_IDataOut 1 1 2 370 690 720
+preplace netloc ctrlUnit_0_RegWre 1 2 2 840 1310 1250
+preplace netloc dataMem_0_DataOut 1 4 2 1670 680 2020
+preplace netloc addBranch_0_result 1 3 2 NJ 420 1670J
+preplace netloc jExtend_0_out 1 1 4 340J 1340 NJ 1340 NJ 1340 1660J
+preplace netloc xlslice_3_Dout 1 2 1 760
+preplace netloc pick41_0_e 1 0 6 30 170 NJ 170 760J 40 NJ 40 NJ 40 2020
+preplace netloc led_0_dispcode 1 5 1 N
+preplace netloc IR_0_sa 1 2 2 740J 1290 1340J
+preplace netloc ctrlUnit_0_WrRegDSrc 1 2 2 850 1350 1240
+preplace netloc ctrlUnit_0_ALUOp 1 3 1 1260J
+preplace netloc pick21_32_0_c 1 3 2 1370 1290 1630
+preplace netloc show_0_data 1 3 1 1340
+preplace netloc IR_0_extend 1 0 3 40 1380 NJ 1380 720
+preplace netloc ctrlUnit_0_InsmemRW 1 1 3 370 20 NJ 20 1270
+preplace netloc lShift2_0_b 1 2 2 870 500 1240
+preplace netloc IR_0_rt 1 2 1 780
+preplace netloc clk_100m_0_1 1 0 1 N
+preplace netloc sw15_0_1 1 0 3 NJ 110 NJ 110 NJ
+preplace netloc ctrlUnit_0_DBDataSrc 1 3 2 1320 920 1650J
+preplace netloc ctrlUnit_0_mRD 1 3 2 1370J 930 NJ
+preplace netloc transtate_0_realstate 1 2 1 730
+preplace netloc pick21_32_1_c 1 2 4 860 1360 N 1360 N 1360 2010
+preplace netloc ctrlUnit_0_EXE 1 3 1 1300J
+preplace netloc alu_0_result 1 2 3 840 10 1280 30 1640J
+preplace netloc four_0_out 1 1 1 350
+preplace netloc IR_0_jExtend 1 0 3 10 1390 NJ 1390 710
+preplace netloc lshift2_26_0_b 1 0 2 20 980 340
+preplace netloc add_0_result 1 0 5 30 1370 350 1290 730 490 NJ 490 NJ
+preplace netloc ctrlUnit_0_ALUSrcA 1 3 1 1310J
+preplace netloc regFile_0_ReadData1 1 2 3 870 50 1280 530 NJ
+preplace netloc pick_data_0_display 1 4 1 NJ
+preplace netloc sw14_0_1 1 2 1 800J
+preplace netloc ctrlUnit_0_mWR 1 3 2 1330J 940 1650J
+preplace netloc ctrlUnit_0_ALUSrcB 1 3 1 1270J
+preplace netloc regFile_0_ReadData2 1 2 3 830 1330 1350 1130 1670J
+preplace netloc ctrlUnit_0_state 1 1 3 360 1420 NJ 1420 1210
+preplace netloc CLK_0_1 1 0 3 10 790 350J 820 770
+preplace netloc RST_0_1 1 0 3 NJ 800 NJ 800 NJ
+preplace netloc alu_0_sign 1 2 3 810 1400 NJ 1400 1640J
+preplace netloc ctrlUnit_0_IRWre 1 1 3 380 1370 740J 1380 1230
+preplace netloc clk_divide_0_clk1k 1 1 1 N
+preplace netloc ctrlUnit_0_PCSrc 1 3 2 1290 570 NJ
+preplace netloc alu_0_zero 1 2 3 820 1390 NJ 1390 1650J
+preplace netloc ctrlUnit_0_RegDst 1 2 2 870 1300 1200
+preplace netloc szExtend_0_result 1 1 3 NJ 1300 790J 1320 1360J
+preplace netloc pick21_32_5_0_c 1 3 2 1350 1120 1630
+preplace netloc pc_0_IAddr 1 1 2 340 150 NJ
+preplace netloc Reset_0_1 1 0 1 N
+levelinfo -pg 1 -10 190 560 1050 1500 1860 2060 -top 0 -bot 1550
+",
+}
+{
+   da_board_cnt: "1",
+}

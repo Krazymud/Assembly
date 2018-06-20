@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun 14 19:27:05 2018" VIVADOVERSION="2018.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="cpu" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK_0" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IR_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="regFile_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="pc_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="ctrlUnit_0" PORT="CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Reset_0" SIGIS="rst" SIGNAME="External_Ports_Reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pc_0" PORT="Reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="timer_0" RIGHT="0" SIGIS="undef" SIGNAME="clock_0_timer">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_0" PORT="timer"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="dispcode_0" RIGHT="0" SIGIS="undef" SIGNAME="led_0_dispcode">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led_0" PORT="dispcode"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sw15_0" SIGIS="undef" SIGNAME="External_Ports_sw15_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="show_0" PORT="sw15"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sw14_0" SIGIS="undef" SIGNAME="External_Ports_sw14_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="show_0" PORT="sw14"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk_100m_0" SIGIS="undef" SIGNAME="External_Ports_clk_100m_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_divide_0" PORT="clk_100m"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="RST_0" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ctrlUnit_0" PORT="RST"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/IR_0" HWVERSION="1.0" INSTANCE="IR_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="IR" VLNV="xilinx.com:module_ref:IR:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_IR_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="IRWre" SIGIS="undef" SIGNAME="ctrlUnit_0_IRWre">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="IRWre"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DataIn" RIGHT="0" SIGIS="undef" SIGNAME="insMem_0_IDataOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="insMem_0" PORT="IDataOut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="ALUOpcode" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_ALUOpcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="ALUOpcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rs" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_rs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="ReadReg1"/>
+            <CONNECTION INSTANCE="show_0" PORT="rs_address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rt" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_rt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="ReadReg2"/>
+            <CONNECTION INSTANCE="show_0" PORT="rt_address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="sa" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_sa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_5_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rd" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="extend" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_extend">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="szExtend_0" PORT="needExtend"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="25" NAME="jExtend" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_jExtend">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lshift2_26_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/addBranch_0" HWVERSION="1.0" INSTANCE="addBranch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="addBranch" VLNV="xilinx.com:module_ref:addBranch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_addBranch_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="add_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="lShift2_0_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lShift2_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="result" RIGHT="0" SIGIS="undef" SIGNAME="addBranch_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick41_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/add_0" HWVERSION="1.0" INSTANCE="add_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="add" VLNV="xilinx.com:module_ref:add:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_add_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="four_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="four_0" PORT="out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="pc_0_IAddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pc_0" PORT="IAddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="result" RIGHT="0" SIGIS="undef" SIGNAME="add_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="addBranch_0" PORT="a"/>
+            <CONNECTION INSTANCE="pick41_0" PORT="a"/>
+            <CONNECTION INSTANCE="regFile_0" PORT="PC4"/>
+            <CONNECTION INSTANCE="jExtend_0" PORT="PC4"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/alu_0" HWVERSION="1.0" INSTANCE="alu_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="alu" VLNV="xilinx.com:module_ref:alu:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_alu_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EXE" SIGIS="undef" SIGNAME="ctrlUnit_0_EXE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="EXE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="pick21_32_5_0_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_5_0" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="pick21_32_0_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_0" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="ALUOp" RIGHT="0" SIGIS="undef" SIGNAME="ctrlUnit_0_ALUOp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="ALUOp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="result" RIGHT="0" SIGIS="undef" SIGNAME="alu_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_1" PORT="a"/>
+            <CONNECTION INSTANCE="dataMem_0" PORT="DAddr"/>
+            <CONNECTION INSTANCE="show_0" PORT="alu_output"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="zero" SIGIS="undef" SIGNAME="alu_0_zero">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="zero"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sign" SIGIS="undef" SIGNAME="alu_0_sign">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="sign"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clk_divide_0" HWVERSION="1.0" INSTANCE="clk_divide_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_divide" VLNV="xilinx.com:module_ref:clk_divide:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_clk_divide_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_100m" SIGIS="undef" SIGNAME="External_Ports_clk_100m_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100m_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk1k" SIGIS="undef" SIGNAME="clk_divide_0_clk1k">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/clock_0" HWVERSION="1.0" INSTANCE="clock_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock" VLNV="xilinx.com:module_ref:clock:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_clock_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_divide_0_clk1k">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_divide_0" PORT="clk1k"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="timer" RIGHT="0" SIGIS="undef" SIGNAME="clock_0_timer">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="timer_0"/>
+            <CONNECTION INSTANCE="pick_data_0" PORT="timer"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ctrlUnit_0" HWVERSION="1.0" INSTANCE="ctrlUnit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ctrlUnit" VLNV="xilinx.com:module_ref:ctrlUnit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_ctrlUnit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="5" NAME="ALUOpcode" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_ALUOpcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="ALUOpcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RST" SIGIS="rst" SIGNAME="External_Ports_RST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sign" SIGIS="undef" SIGNAME="alu_0_sign">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alu_0" PORT="sign"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="zero" SIGIS="undef" SIGNAME="alu_0_zero">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alu_0" PORT="zero"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegWre" SIGIS="undef" SIGNAME="ctrlUnit_0_RegWre">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="WE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="WrRegDSrc" SIGIS="undef" SIGNAME="ctrlUnit_0_WrRegDSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="WrRegDSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="InsmemRW" SIGIS="undef" SIGNAME="ctrlUnit_0_InsmemRW">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="insMem_0" PORT="RW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="IRWre" SIGIS="undef" SIGNAME="ctrlUnit_0_IRWre">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="IRWre"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PCWre" SIGIS="undef" SIGNAME="ctrlUnit_0_PCWre">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pc_0" PORT="PCWre"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ExtSel" SIGIS="undef" SIGNAME="ctrlUnit_0_ExtSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="szExtend_0" PORT="ExtSel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="mRD" SIGIS="undef" SIGNAME="ctrlUnit_0_mRD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dataMem_0" PORT="mRD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="mWR" SIGIS="undef" SIGNAME="ctrlUnit_0_mWR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dataMem_0" PORT="mWR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="EXE" SIGIS="undef" SIGNAME="ctrlUnit_0_EXE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alu_0" PORT="EXE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DBDataSrc" SIGIS="undef" SIGNAME="ctrlUnit_0_DBDataSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_1" PORT="sign"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ALUSrcB" SIGIS="undef" SIGNAME="ctrlUnit_0_ALUSrcB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_0" PORT="sign"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ALUSrcA" SIGIS="undef" SIGNAME="ctrlUnit_0_ALUSrcA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_5_0" PORT="sign"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="RegDst" RIGHT="0" SIGIS="undef" SIGNAME="ctrlUnit_0_RegDst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="RegDst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="PCSrc" RIGHT="0" SIGIS="undef" SIGNAME="ctrlUnit_0_PCSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick41_0" PORT="sign"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="ALUOp" RIGHT="0" SIGIS="undef" SIGNAME="ctrlUnit_0_ALUOp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alu_0" PORT="ALUOp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="state" RIGHT="0" SIGIS="undef" SIGNAME="ctrlUnit_0_state">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="transtate_0" PORT="state"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/dataMem_0" HWVERSION="1.0" INSTANCE="dataMem_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dataMem" VLNV="xilinx.com:module_ref:dataMem:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_dataMem_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="DAddr" RIGHT="0" SIGIS="undef" SIGNAME="alu_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alu_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DataIn" RIGHT="0" SIGIS="undef" SIGNAME="regFile_0_ReadData2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="ReadData2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mRD" SIGIS="undef" SIGNAME="ctrlUnit_0_mRD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="mRD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mWR" SIGIS="undef" SIGNAME="ctrlUnit_0_mWR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="mWR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="DataOut" RIGHT="0" SIGIS="undef" SIGNAME="dataMem_0_DataOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_1" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/four_0" HWVERSION="1.0" INSTANCE="four_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="four" VLNV="xilinx.com:module_ref:four:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_four_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="31" NAME="out" RIGHT="0" SIGIS="undef" SIGNAME="four_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/insMem_0" HWVERSION="1.0" INSTANCE="insMem_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="insMem" VLNV="xilinx.com:module_ref:insMem:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_insMem_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="IAddr" RIGHT="0" SIGIS="undef" SIGNAME="pc_0_IAddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pc_0" PORT="IAddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="IDataIn" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="RW" SIGIS="undef" SIGNAME="ctrlUnit_0_InsmemRW">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="InsmemRW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="IDataOut" RIGHT="0" SIGIS="undef" SIGNAME="insMem_0_IDataOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="DataIn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/jExtend_0" HWVERSION="1.0" INSTANCE="jExtend_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="jExtend" VLNV="xilinx.com:module_ref:jExtend:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_jExtend_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="PC4" RIGHT="0" SIGIS="undef" SIGNAME="add_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="27" NAME="addr" RIGHT="0" SIGIS="undef" SIGNAME="lshift2_26_0_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lshift2_26_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="out" RIGHT="0" SIGIS="undef" SIGNAME="jExtend_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick41_0" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/lShift2_0" HWVERSION="1.0" INSTANCE="lShift2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="lShift2" VLNV="xilinx.com:module_ref:lShift2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_lShift2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="szExtend_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="szExtend_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="lShift2_0_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="addBranch_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/led_0" HWVERSION="1.0" INSTANCE="led_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="led" VLNV="xilinx.com:module_ref:led:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_led_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="display_data" RIGHT="0" SIGIS="undef" SIGNAME="pick_data_0_display">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick_data_0" PORT="display"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="dispcode" RIGHT="0" SIGIS="undef" SIGNAME="led_0_dispcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="dispcode_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/lshift2_26_0" HWVERSION="1.0" INSTANCE="lshift2_26_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="lshift2_26" VLNV="xilinx.com:module_ref:lshift2_26:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_lshift2_26_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="25" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_jExtend">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="jExtend"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="27" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="lshift2_26_0_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jExtend_0" PORT="addr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pc_0" HWVERSION="1.0" INSTANCE="pc_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pc" VLNV="xilinx.com:module_ref:pc:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_pc_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="PCWre" SIGIS="undef" SIGNAME="ctrlUnit_0_PCWre">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="PCWre"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Reset" SIGIS="rst" SIGNAME="External_Ports_Reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="PC" RIGHT="0" SIGIS="undef" SIGNAME="pick41_0_e">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick41_0" PORT="e"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="IAddr" RIGHT="0" SIGIS="undef" SIGNAME="pc_0_IAddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="b"/>
+            <CONNECTION INSTANCE="insMem_0" PORT="IAddr"/>
+            <CONNECTION INSTANCE="show_0" PORT="current_pc"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pick21_32_0" HWVERSION="1.0" INSTANCE="pick21_32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pick21_32" VLNV="xilinx.com:module_ref:pick21_32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_pick21_32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="regFile_0_ReadData2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="ReadData2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="szExtend_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="szExtend_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sign" SIGIS="undef" SIGNAME="ctrlUnit_0_ALUSrcB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="ALUSrcB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="c" RIGHT="0" SIGIS="undef" SIGNAME="pick21_32_0_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alu_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pick21_32_1" HWVERSION="1.0" INSTANCE="pick21_32_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pick21_32" VLNV="xilinx.com:module_ref:pick21_32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_pick21_32_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="alu_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alu_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="dataMem_0_DataOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dataMem_0" PORT="DataOut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sign" SIGIS="undef" SIGNAME="ctrlUnit_0_DBDataSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="DBDataSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="c" RIGHT="0" SIGIS="undef" SIGNAME="pick21_32_1_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="DB"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pick21_32_5_0" HWVERSION="1.0" INSTANCE="pick21_32_5_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pick21_32_5" VLNV="xilinx.com:module_ref:pick21_32_5:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_pick21_32_5_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="regFile_0_ReadData1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="ReadData1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_sa">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="sa"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sign" SIGIS="undef" SIGNAME="ctrlUnit_0_ALUSrcA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="ALUSrcA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="c" RIGHT="0" SIGIS="undef" SIGNAME="pick21_32_5_0_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alu_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pick41_0" HWVERSION="1.0" INSTANCE="pick41_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pick41" VLNV="xilinx.com:module_ref:pick41:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_pick41_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="add_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="b" RIGHT="0" SIGIS="undef" SIGNAME="addBranch_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="addBranch_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="c" RIGHT="0" SIGIS="undef" SIGNAME="regFile_0_ReadData1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="ReadData1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="d" RIGHT="0" SIGIS="undef" SIGNAME="jExtend_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="jExtend_0" PORT="out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="sign" RIGHT="0" SIGIS="undef" SIGNAME="ctrlUnit_0_PCSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="PCSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="e" RIGHT="0" SIGIS="undef" SIGNAME="pick41_0_e">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pc_0" PORT="PC"/>
+            <CONNECTION INSTANCE="show_0" PORT="next_pc"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pick_data_0" HWVERSION="1.0" INSTANCE="pick_data_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pick_data" VLNV="xilinx.com:module_ref:pick_data:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_pick_data_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="timer" RIGHT="0" SIGIS="undef" SIGNAME="clock_0_timer">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_0" PORT="timer"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="data" RIGHT="0" SIGIS="undef" SIGNAME="show_0_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="show_0" PORT="data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="display" RIGHT="0" SIGIS="undef" SIGNAME="pick_data_0_display">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="led_0" PORT="display_data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/regFile_0" HWVERSION="1.0" INSTANCE="regFile_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="regFile" VLNV="xilinx.com:module_ref:regFile:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_regFile_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WE" SIGIS="undef" SIGNAME="ctrlUnit_0_RegWre">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="RegWre"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="rd" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="RegDst" RIGHT="0" SIGIS="undef" SIGNAME="ctrlUnit_0_RegDst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="RegDst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="ReadReg1" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_rs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="rs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="ReadReg2" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_rt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="rt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WrRegDSrc" SIGIS="undef" SIGNAME="ctrlUnit_0_WrRegDSrc">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="WrRegDSrc"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="ReadData1" RIGHT="0" SIGIS="undef" SIGNAME="regFile_0_ReadData1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick41_0" PORT="c"/>
+            <CONNECTION INSTANCE="pick21_32_5_0" PORT="a"/>
+            <CONNECTION INSTANCE="show_0" PORT="rs_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="ReadData2" RIGHT="0" SIGIS="undef" SIGNAME="regFile_0_ReadData2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_0" PORT="a"/>
+            <CONNECTION INSTANCE="dataMem_0" PORT="DataIn"/>
+            <CONNECTION INSTANCE="show_0" PORT="rt_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="PC4" RIGHT="0" SIGIS="undef" SIGNAME="add_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="add_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="DB" RIGHT="0" SIGIS="undef" SIGNAME="pick21_32_1_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_1" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/show_0" HWVERSION="1.0" INSTANCE="show_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="show" VLNV="xilinx.com:module_ref:show:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_show_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="sw15" SIGIS="undef" SIGNAME="External_Ports_sw15_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw15_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sw14" SIGIS="undef" SIGNAME="External_Ports_sw14_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw14_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="current_pc" RIGHT="0" SIGIS="undef" SIGNAME="pc_0_IAddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pc_0" PORT="IAddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="next_pc" RIGHT="0" SIGIS="undef" SIGNAME="pick41_0_e">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick41_0" PORT="e"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="rs_address" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_rs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="rs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="rs_data" RIGHT="0" SIGIS="undef" SIGNAME="regFile_0_ReadData1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="ReadData1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="rt_address" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_rt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="rt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="rt_data" RIGHT="0" SIGIS="undef" SIGNAME="regFile_0_ReadData2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="regFile_0" PORT="ReadData2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="alu_output" RIGHT="0" SIGIS="undef" SIGNAME="alu_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="alu_0" PORT="result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="state" RIGHT="0" SIGIS="undef" SIGNAME="transtate_0_realstate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="transtate_0" PORT="realstate"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="data" RIGHT="0" SIGIS="undef" SIGNAME="show_0_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick_data_0" PORT="data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/szExtend_0" HWVERSION="1.0" INSTANCE="szExtend_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="szExtend" VLNV="xilinx.com:module_ref:szExtend:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_szExtend_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="ExtSel" SIGIS="undef" SIGNAME="ctrlUnit_0_ExtSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="ExtSel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="needExtend" RIGHT="0" SIGIS="undef" SIGNAME="IR_0_extend">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IR_0" PORT="extend"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="result" RIGHT="0" SIGIS="undef" SIGNAME="szExtend_0_result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pick21_32_0" PORT="b"/>
+            <CONNECTION INSTANCE="lShift2_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/transtate_0" HWVERSION="1.0" INSTANCE="transtate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="transtate" VLNV="xilinx.com:module_ref:transtate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="cpu_transtate_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="state" RIGHT="0" SIGIS="undef" SIGNAME="ctrlUnit_0_state">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ctrlUnit_0" PORT="state"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="realstate" RIGHT="0" SIGIS="undef" SIGNAME="transtate_0_realstate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="show_0" PORT="state"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,98 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/four.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/lshift2_26.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lshift2_26
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/jExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/szExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module szExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/insMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module insMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/addBranch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addBranch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/lShift2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lShift2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/ctrlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/regFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/pick21_32_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pick21_32_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/pick21_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pick21_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/pick41.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pick41
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/dataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/clock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/show.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module show
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/pick_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pick_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/clk_divide.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_divide
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sources_1/new/transtate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transtate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_pc_0_0/sim/cpu_pc_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pc_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_four_0_0/sim/cpu_four_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_four_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_lshift2_26_0_0/sim/cpu_lshift2_26_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_lshift2_26_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_jExtend_0_0/sim/cpu_jExtend_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_jExtend_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_szExtend_0_0/sim/cpu_szExtend_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_szExtend_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_add_0_0/sim/cpu_add_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_add_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_insMem_0_0/sim/cpu_insMem_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_insMem_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_addBranch_0_0/sim/cpu_addBranch_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_addBranch_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_lShift2_0_0/sim/cpu_lShift2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_lShift2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_ctrlUnit_0_0/sim/cpu_ctrlUnit_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_ctrlUnit_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_regFile_0_0/sim/cpu_regFile_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_regFile_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_pick21_32_5_0_0/sim/cpu_pick21_32_5_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pick21_32_5_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_alu_0_0/sim/cpu_alu_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_alu_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_pick21_32_0_0/sim/cpu_pick21_32_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pick21_32_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_pick41_0_0/sim/cpu_pick41_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pick41_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_pick21_32_1_0/sim/cpu_pick21_32_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pick21_32_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_dataMem_0_0/sim/cpu_dataMem_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_dataMem_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_clock_0_0/sim/cpu_clock_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_clock_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_show_0_0/sim/cpu_show_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_show_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_pick_data_0_0/sim/cpu_pick_data_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_pick_data_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_led_0_0/sim/cpu_led_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_led_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/sim/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_clk_divide_0_0/sim/cpu_clk_divide_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_clk_divide_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_IR_0_0/sim/cpu_IR_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_IR_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.ip_user_files/bd/cpu/ip/cpu_transtate_0_0/sim/cpu_transtate_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_transtate_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/eadric/Desktop/singleCpu/singleCpu.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test

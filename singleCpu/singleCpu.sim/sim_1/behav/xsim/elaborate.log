@@ -1,0 +1,60 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/xelab -wto 8ed2f7e6f8734849a75367d53989bf12 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IR
+Compiling module xil_defaultlib.cpu_IR_0_0
+Compiling module xil_defaultlib.addBranch
+Compiling module xil_defaultlib.cpu_addBranch_0_0
+Compiling module xil_defaultlib.add
+Compiling module xil_defaultlib.cpu_add_0_0
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.cpu_alu_0_0
+Compiling module xil_defaultlib.clk_divide
+Compiling module xil_defaultlib.cpu_clk_divide_0_0
+Compiling module xil_defaultlib.clock
+Compiling module xil_defaultlib.cpu_clock_0_0
+Compiling module xil_defaultlib.ctrlUnit
+Compiling module xil_defaultlib.cpu_ctrlUnit_0_0
+Compiling module xil_defaultlib.dataMem
+Compiling module xil_defaultlib.cpu_dataMem_0_0
+Compiling module xil_defaultlib.four
+Compiling module xil_defaultlib.cpu_four_0_0
+Compiling module xil_defaultlib.insMem
+Compiling module xil_defaultlib.cpu_insMem_0_0
+Compiling module xil_defaultlib.jExtend
+Compiling module xil_defaultlib.cpu_jExtend_0_0
+Compiling module xil_defaultlib.lShift2
+Compiling module xil_defaultlib.cpu_lShift2_0_0
+Compiling module xil_defaultlib.led
+Compiling module xil_defaultlib.cpu_led_0_0
+Compiling module xil_defaultlib.lshift2_26
+Compiling module xil_defaultlib.cpu_lshift2_26_0_0
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.cpu_pc_0_0
+Compiling module xil_defaultlib.pick21_32
+Compiling module xil_defaultlib.cpu_pick21_32_0_0
+Compiling module xil_defaultlib.cpu_pick21_32_1_0
+Compiling module xil_defaultlib.pick21_32_5
+Compiling module xil_defaultlib.cpu_pick21_32_5_0_0
+Compiling module xil_defaultlib.pick41
+Compiling module xil_defaultlib.cpu_pick41_0_0
+Compiling module xil_defaultlib.pick_data
+Compiling module xil_defaultlib.cpu_pick_data_0_0
+Compiling module xil_defaultlib.regFile
+Compiling module xil_defaultlib.cpu_regFile_0_0
+Compiling module xil_defaultlib.show
+Compiling module xil_defaultlib.cpu_show_0_0
+Compiling module xil_defaultlib.szExtend
+Compiling module xil_defaultlib.cpu_szExtend_0_0
+Compiling module xil_defaultlib.transtate
+Compiling module xil_defaultlib.cpu_transtate_0_0
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

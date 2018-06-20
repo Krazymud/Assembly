@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="cpu_insMem_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_insMem_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_xlslice_0_3_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_xlslice_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_xlslice_0_2_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_xlslice_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_add_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_add_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_xlslice_0_4_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_xlslice_0_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_xlslice_0_5_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_xlslice_0_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_pick21_5_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_pick21_5_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_addBranch_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_addBranch_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_lShift2_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_lShift2_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_ctrlUnit_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_ctrlUnit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_regFile_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_regFile_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_xlslice_4_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_xlslice_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_pick21_32_5_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_pick21_32_5_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_alu_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_alu_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_pick21_32_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_pick21_32_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_pick41_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_pick41_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_pick21_32_1_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_pick21_32_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_dataMem_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_dataMem_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_clk_wiz_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_clock_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_clock_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_show_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_show_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_pick_data_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_pick_data_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_szExtend_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_szExtend_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_xlslice_0_1_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_xlslice_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_jExtend_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_jExtend_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_lshift2_26_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_lshift2_26_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_xlslice_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_xlslice_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_four_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_four_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_pc_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_pc_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cpu_led_0_0_synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/cpu_led_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/eadric/Desktop/singleCpu/singleCpu.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="cpu_insMem_0_0_synth_1"/>
+		<Parent Id="cpu_xlslice_0_3_synth_1"/>
+		<Parent Id="cpu_xlslice_0_2_synth_1"/>
+		<Parent Id="cpu_add_0_0_synth_1"/>
+		<Parent Id="cpu_xlslice_0_4_synth_1"/>
+		<Parent Id="cpu_xlslice_0_5_synth_1"/>
+		<Parent Id="cpu_pick21_5_0_0_synth_1"/>
+		<Parent Id="cpu_addBranch_0_0_synth_1"/>
+		<Parent Id="cpu_lShift2_0_0_synth_1"/>
+		<Parent Id="cpu_ctrlUnit_0_0_synth_1"/>
+		<Parent Id="cpu_regFile_0_0_synth_1"/>
+		<Parent Id="cpu_xlslice_4_0_synth_1"/>
+		<Parent Id="cpu_pick21_32_5_0_0_synth_1"/>
+		<Parent Id="cpu_alu_0_0_synth_1"/>
+		<Parent Id="cpu_pick21_32_0_0_synth_1"/>
+		<Parent Id="cpu_pick41_0_0_synth_1"/>
+		<Parent Id="cpu_pick21_32_1_0_synth_1"/>
+		<Parent Id="cpu_dataMem_0_0_synth_1"/>
+		<Parent Id="cpu_clk_wiz_0_0_synth_1"/>
+		<Parent Id="cpu_clock_0_0_synth_1"/>
+		<Parent Id="cpu_show_0_0_synth_1"/>
+		<Parent Id="cpu_pick_data_0_0_synth_1"/>
+		<Parent Id="cpu_szExtend_0_0_synth_1"/>
+		<Parent Id="cpu_xlslice_0_1_synth_1"/>
+		<Parent Id="cpu_jExtend_0_0_synth_1"/>
+		<Parent Id="cpu_lshift2_26_0_0_synth_1"/>
+		<Parent Id="cpu_xlslice_0_0_synth_1"/>
+		<Parent Id="cpu_four_0_0_synth_1"/>
+		<Parent Id="cpu_pc_0_0_synth_1"/>
+		<Parent Id="cpu_led_0_0_synth_1"/>
+	</Run>
+</Runs>
+

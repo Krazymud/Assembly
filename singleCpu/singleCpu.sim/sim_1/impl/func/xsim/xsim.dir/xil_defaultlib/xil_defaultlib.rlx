@@ -1,0 +1,6 @@
+0.6
+2018.1
+Apr  4 2018
+18:43:17
+/home/eadric/Desktop/singleCpu/singleCpu.sim/sim_1/impl/func/xsim/test_func_impl.v,1528901431,verilog,,/home/eadric/Desktop/singleCpu/singleCpu.srcs/sim_1/new/test.v,,cpu;cpu_IR_0_0;cpu_IR_0_0_IR;cpu_addBranch_0_0;cpu_addBranch_0_0_addBranch;cpu_add_0_0;cpu_add_0_0_add;cpu_alu_0_0;cpu_alu_0_0_alu;cpu_clk_divide_0_0;cpu_clk_divide_0_0_clk_divide;cpu_clock_0_0;cpu_clock_0_0_clock;cpu_ctrlUnit_0_0;cpu_ctrlUnit_0_0_ctrlUnit;cpu_dataMem_0_0;cpu_dataMem_0_0_dataMem;cpu_four_0_0;cpu_insMem_0_0;cpu_jExtend_0_0;cpu_lShift2_0_0;cpu_led_0_0;cpu_led_0_0_led;cpu_lshift2_26_0_0;cpu_pc_0_0;cpu_pc_0_0_pc;cpu_pick21_32_0_0;cpu_pick21_32_0_0_pick21_32;cpu_pick21_32_1_0;cpu_pick21_32_1_0_pick21_32;cpu_pick21_32_5_0_0;cpu_pick21_32_5_0_0_pick21_32_5;cpu_pick41_0_0;cpu_pick41_0_0_pick41;cpu_pick_data_0_0;cpu_pick_data_0_0_pick_data;cpu_regFile_0_0;cpu_regFile_0_0_regFile;cpu_show_0_0;cpu_show_0_0_show;cpu_szExtend_0_0;glbl,,,,,,,,
+/home/eadric/Desktop/singleCpu/singleCpu.srcs/sim_1/new/test.v,1528804515,verilog,,,,test,,,,,,,,
